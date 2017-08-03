@@ -1,0 +1,6 @@
+<div class="boxenfant">
+<ul>
+  <li *ngFor="let fruit of list, i as index">{{fruit}}<button (click)="delete(i)"> X </button></li>
+  <li style="list-style: none">{{word}}</li>
+</ul>
+</div>

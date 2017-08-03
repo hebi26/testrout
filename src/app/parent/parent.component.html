@@ -1,0 +1,6 @@
+<p>
+  <input #entry [(ngModel)]="word" (keyup.enter)="addfruit()">
+  <!--<input #entry ><button (click)="addfruit(entry.value)">-Add-</button>-->
+
+</p>
+<app-enfant (supr)="delete($event)" [word]="word" [list]="list"></app-enfant>
